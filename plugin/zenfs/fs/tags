@@ -1,0 +1,422 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Acquire	zbd_zenfs.h	/^  bool Acquire() {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+AddRecord	fs_zenfs.cc	/^IOStatus ZenMetaLog::AddRecord(const Slice& slice) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenMetaLog
+AllocateMetaZone	zbd_zenfs.cc	/^IOStatus ZonedBlockDevice::AllocateMetaZone(Zone **out_meta_zone) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+AllocateZone	zbd_zenfs.cc	/^IOStatus ZonedBlockDevice::AllocateZone(Env::WriteLifeTimeHint file_lifetime,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+Append	io_zenfs.cc	/^IOStatus ZoneFile::Append(void* data, int data_size, int valid_size) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+Append	io_zenfs.cc	/^IOStatus ZonedWritableFile::Append(const Slice& data,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+Append	zbd_zenfs.cc	/^IOStatus Zone::Append(char *data, uint32_t size) {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+BufferedWrite	io_zenfs.cc	/^IOStatus ZonedWritableFile::BufferedWrite(const Slice& slice) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+CURRENT_SUPERBLOCK_VERSION	fs_zenfs.h	/^  const uint32_t CURRENT_SUPERBLOCK_VERSION = 1;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+CheckRelease	zbd_zenfs.cc	/^inline IOStatus Zone::CheckRelease() {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+CheckScheduler	zbd_zenfs.cc	/^IOStatus ZonedBlockDevice::CheckScheduler() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+ClearFiles	fs_zenfs.cc	/^void ZenFS::ClearFiles() {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+Close	io_zenfs.cc	/^IOStatus ZonedWritableFile::Close(const IOOptions& options,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+Close	zbd_zenfs.cc	/^IOStatus Zone::Close() {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+CloseActiveZone	io_zenfs.cc	/^IOStatus ZoneFile::CloseActiveZone() {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+CloseWR	io_zenfs.cc	/^IOStatus ZoneFile::CloseWR() {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+CloseWR	zbd_zenfs.cc	/^IOStatus Zone::CloseWR() {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+CompatibleWith	fs_zenfs.cc	/^Status Superblock::CompatibleWith(ZonedBlockDevice* zbd) {$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+DEFAULT_FLAGS	fs_zenfs.h	/^  const uint32_t DEFAULT_FLAGS = 0;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+DEFAULT_ZENV_LOG_PATH	fs_zenfs.cc	28;"	d	file:
+DebugPrint	metrics_sample.h	/^  virtual void DebugPrint(std::ostream& os) {$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+DecodeFileDeletionFrom	fs_zenfs.cc	/^Status ZenFS::DecodeFileDeletionFrom(Slice* input) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+DecodeFileUpdateFrom	fs_zenfs.cc	/^Status ZenFS::DecodeFileUpdateFrom(Slice* slice) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+DecodeFrom	fs_zenfs.cc	/^Status Superblock::DecodeFrom(Slice* input) {$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+DecodeFrom	io_zenfs.cc	/^Status ZoneExtent::DecodeFrom(Slice* input) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneExtent
+DecodeFrom	io_zenfs.cc	/^Status ZoneFile::DecodeFrom(Slice* input) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+DecodeSnapshotFrom	fs_zenfs.cc	/^Status ZenFS::DecodeSnapshotFrom(Slice* input) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+DeleteFile	fs_zenfs.cc	/^IOStatus ZenFS::DeleteFile(const std::string& fname, const IOOptions& options,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+DeleteFile	fs_zenfs.cc	/^IOStatus ZenFS::DeleteFile(std::string fname) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+ENCODED_SIZE	fs_zenfs.h	/^  const uint32_t ENCODED_SIZE = 512;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+EncodeFileDeletionTo	fs_zenfs.cc	/^void ZenFS::EncodeFileDeletionTo(std::shared_ptr<ZoneFile> zoneFile,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+EncodeJson	fs_zenfs.cc	/^void ZenFS::EncodeJson(std::ostream& json_stream) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+EncodeJson	io_zenfs.cc	/^void ZoneExtent::EncodeJson(std::ostream& json_stream) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneExtent
+EncodeJson	io_zenfs.cc	/^void ZoneFile::EncodeJson(std::ostream& json_stream) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+EncodeJson	zbd_zenfs.cc	/^void Zone::EncodeJson(std::ostream &json_stream) {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+EncodeJson	zbd_zenfs.cc	/^void ZonedBlockDevice::EncodeJson(std::ostream &json_stream) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+EncodeJsonZone	zbd_zenfs.cc	/^void ZonedBlockDevice::EncodeJsonZone(std::ostream &json_stream,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+EncodeSnapshotTo	fs_zenfs.cc	/^void ZenFS::EncodeSnapshotTo(std::string* output) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+EncodeSnapshotTo	io_zenfs.h	/^  void EncodeSnapshotTo(std::string* output) { EncodeTo(output, 0); };$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+EncodeTo	fs_zenfs.cc	/^void Superblock::EncodeTo(std::string* output) {$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+EncodeTo	io_zenfs.cc	/^void ZoneExtent::EncodeTo(std::string* output) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneExtent
+EncodeTo	io_zenfs.cc	/^void ZoneFile::EncodeTo(std::string* output, uint32_t extent_start) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+EncodeUpdateTo	io_zenfs.h	/^  void EncodeUpdateTo(std::string* output) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+ErrorToString	zbd_zenfs.cc	/^std::string ZonedBlockDevice::ErrorToString(int err) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+Extent	snapshot.h	/^  const std::vector<ZoneExtentSnapshot>& Extent() const { return extent_; }$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneFileSnapshot
+FileExists	fs_zenfs.cc	/^IOStatus ZenFS::FileExists(const std::string& fname, const IOOptions& options,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+FileID	snapshot.h	/^  uint64_t FileID() const { return file_id_; }$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneFileSnapshot
+Filename	snapshot.h	/^  const std::string& Filename() const { return filename_; }$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneFileSnapshot
+Finish	zbd_zenfs.cc	/^IOStatus Zone::Finish() {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+Flush	io_zenfs.cc	/^IOStatus ZonedWritableFile::Flush(const IOOptions& \/*options*\/,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+FlushBuffer	io_zenfs.cc	/^IOStatus ZonedWritableFile::FlushBuffer() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+Fsync	io_zenfs.cc	/^IOStatus ZonedWritableFile::Fsync(const IOOptions& \/*options*\/,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+GetAuxFsPath	fs_zenfs.h	/^  std::string GetAuxFsPath() { return std::string(aux_fs_path_); }$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+GetBlockSize	io_zenfs.h	/^  uint32_t GetBlockSize() { return zbd_->GetBlockSize(); }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetBlockSize	zbd_zenfs.cc	/^uint32_t ZonedBlockDevice::GetBlockSize() { return block_sz_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetCapacityLeft	zbd_zenfs.cc	/^uint64_t Zone::GetCapacityLeft() { return capacity_; }$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+GetChildren	fs_zenfs.cc	/^IOStatus ZenFS::GetChildren(const std::string& dir, const IOOptions& options,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetExtent	io_zenfs.cc	/^ZoneExtent* ZoneFile::GetExtent(uint64_t file_offset, uint64_t* dev_offset) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetExtents	io_zenfs.h	/^  std::vector<ZoneExtent*> GetExtents() { return extents_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetFile	fs_zenfs.cc	/^std::shared_ptr<ZoneFile> ZenFS::GetFile(std::string fname) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetFileInternal	fs_zenfs.cc	/^std::shared_ptr<ZoneFile> ZenFS::GetFileInternal(std::string fname) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetFileModificationTime	fs_zenfs.cc	/^IOStatus ZenFS::GetFileModificationTime(const std::string& f,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetFileModificationTime	io_zenfs.cc	/^time_t ZoneFile::GetFileModificationTime() { return m_time_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetFileSize	fs_zenfs.cc	/^IOStatus ZenFS::GetFileSize(const std::string& f, const IOOptions& options,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetFileSize	io_zenfs.cc	/^uint64_t ZoneFile::GetFileSize() { return fileSize; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetFilename	io_zenfs.cc	/^std::string ZoneFile::GetFilename() { return filename_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetFilename	zbd_zenfs.cc	/^std::string ZonedBlockDevice::GetFilename() { return filename_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetFinishTreshold	fs_zenfs.h	/^  uint32_t GetFinishTreshold() { return finish_treshold_; }$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+GetFreeSpace	zbd_zenfs.cc	/^uint64_t ZonedBlockDevice::GetFreeSpace() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetHistSnapshot	metrics_sample.h	/^  void GetHistSnapshot(std::vector<TypeRecord>& hist) {$/;"	f	struct:ROCKSDB_NAMESPACE::ReporterSample
+GetID	io_zenfs.h	/^  uint64_t GetID() { return file_id_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetIOZone	zbd_zenfs.cc	/^Zone *ZonedBlockDevice::GetIOZone(uint64_t offset) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetLifeTimeDiff	zbd_zenfs.cc	/^unsigned int GetLifeTimeDiff(Env::WriteLifeTimeHint zone_lifetime,$/;"	f	namespace:ROCKSDB_NAMESPACE
+GetLogFilename	fs_zenfs.cc	/^static std::string GetLogFilename(std::string bdev) {$/;"	f	namespace:ROCKSDB_NAMESPACE
+GetLogger	fs_zenfs.h	/^  std::shared_ptr<Logger> GetLogger() { return logger_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetMetaZones	zbd_zenfs.h	/^  std::vector<Zone *> GetMetaZones() { return meta_zones; }$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetMetrics	zbd_zenfs.h	/^  std::shared_ptr<ZenFSMetrics> GetMetrics() { return metrics_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetNrZones	zbd_zenfs.h	/^  uint32_t GetNrZones() { return nr_zones_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetReclaimableSpace	zbd_zenfs.cc	/^uint64_t ZonedBlockDevice::GetReclaimableSpace() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetReport	fs_zenfs.cc	/^void Superblock::GetReport(std::string* reportString) {$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+GetSeq	fs_zenfs.h	/^  uint32_t GetSeq() { return sequence_; }$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+GetTime	metrics.h	/^  virtual uint64_t GetTime() { return env_->NowMicros(); }$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+GetTime	metrics_sample.h	/^  uint64_t GetTime() { return env_->NowMicros(); }$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+GetUUID	fs_zenfs.h	/^  std::string GetUUID() { return std::string(uuid_); }$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+GetUniqueId	io_zenfs.cc	/^size_t ZoneFile::GetUniqueId(char* id, size_t max_size) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetUniqueId	io_zenfs.cc	/^size_t ZonedRandomAccessFile::GetUniqueId(char* id, size_t max_size) const {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedRandomAccessFile
+GetUsedSpace	zbd_zenfs.cc	/^uint64_t ZonedBlockDevice::GetUsedSpace() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetWriteLifeTimeHint	io_zenfs.h	/^  Env::WriteLifeTimeHint GetWriteLifeTimeHint() { return lifetime_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetWriteLifeTimeHints	fs_zenfs.cc	/^std::map<std::string, Env::WriteLifeTimeHint> ZenFS::GetWriteLifeTimeHints() {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetZBDMetrics	io_zenfs.h	/^  std::shared_ptr<ZenFSMetrics> GetZBDMetrics() { return zbd_->GetMetrics(); }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetZbd	io_zenfs.h	/^  ZonedBlockDevice* GetZbd() { return zbd_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+GetZone	fs_zenfs.h	/^  Zone* GetZone() { return zone_; };$/;"	f	class:ROCKSDB_NAMESPACE::ZenMetaLog
+GetZoneDeferredStatus	zbd_zenfs.cc	/^IOStatus ZonedBlockDevice::GetZoneDeferredStatus() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetZoneFileSnapshot	fs_zenfs.cc	/^void ZenFS::GetZoneFileSnapshot(std::vector<ZoneFileSnapshot>& zone_files) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetZoneNr	zbd_zenfs.cc	/^uint64_t Zone::GetZoneNr() { return start_ \/ zbd_->GetZoneSize(); }$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+GetZoneSize	zbd_zenfs.h	/^  uint64_t GetZoneSize() { return zone_sz_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+GetZoneSnapshot	fs_zenfs.cc	/^void ZenFS::GetZoneSnapshot(std::vector<ZoneSnapshot>& zones) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+GetZoneSnapshot	zbd_zenfs.cc	/^void ZonedBlockDevice::GetZoneSnapshot(std::vector<ZoneSnapshot> &snapshot) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+ID	snapshot.h	/^  uint64_t ID() const { return start_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+IsBusy	zbd_zenfs.h	/^  bool IsBusy() { return this->busy_.load(std::memory_order_relaxed); }$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+IsEmpty	zbd_zenfs.cc	/^bool Zone::IsEmpty() { return (wp_ == start_); }$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+IsFull	zbd_zenfs.cc	/^bool Zone::IsFull() { return (capacity_ == 0); }$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+IsOpenForWR	io_zenfs.cc	/^bool ZoneFile::IsOpenForWR() { return open_for_wr_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+IsUsed	zbd_zenfs.cc	/^bool Zone::IsUsed() { return (used_capacity_ > 0); }$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+KB	zbd_zenfs.cc	80;"	d	file:
+LIFETIME_DIFF_NOT_GOOD	zbd_zenfs.cc	575;"	d	file:
+Label	metrics.h	/^  typedef uint32_t Label;$/;"	t	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+Length	snapshot.h	/^  uint64_t Length() const { return length_; }$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneExtentSnapshot
+ListZenFileSystems	fs_zenfs.cc	/^Status ListZenFileSystems(std::map<std::string, std::string>& out_list) {$/;"	f	namespace:ROCKSDB_NAMESPACE
+ListZenFileSystems	fs_zenfs.cc	/^std::map<std::string, std::string> ListZenFileSystems() {$/;"	f	namespace:ROCKSDB_NAMESPACE
+LogFiles	fs_zenfs.cc	/^void ZenFS::LogFiles() {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+LogZoneStats	zbd_zenfs.cc	/^void ZonedBlockDevice::LogZoneStats() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+LogZoneUsage	zbd_zenfs.cc	/^void ZonedBlockDevice::LogZoneUsage() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+MAGIC	fs_zenfs.h	/^  const uint32_t MAGIC = 0x5a454e46; \/* ZENF *\/$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+MB	zbd_zenfs.cc	81;"	d	file:
+MaxCapacity	snapshot.h	/^  uint64_t MaxCapacity() const { return max_capacity_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+MergeUpdate	io_zenfs.cc	/^Status ZoneFile::MergeUpdate(std::shared_ptr<ZoneFile> update) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+MetadataSynced	io_zenfs.h	/^  void MetadataSynced() { nr_synced_extents_ = extents_.size(); };$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+MetadataWriter	fs_zenfs.h	/^  struct MetadataWriter : public ZonedWritableFile::MetadataWriter {$/;"	s	class:ROCKSDB_NAMESPACE::ZenFS
+MetadataWriter	io_zenfs.h	/^  class MetadataWriter {$/;"	c	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+MinReportInterval	metrics_sample.h	/^  static const TypeTime MinReportInterval =$/;"	m	struct:ROCKSDB_NAMESPACE::ReporterSample
+MkFS	fs_zenfs.cc	/^Status ZenFS::MkFS(std::string aux_fs_path, uint32_t finish_threshold) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+Mount	fs_zenfs.cc	/^Status ZenFS::Mount(bool readonly) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+NVME_ZNS_NAMESPACE	zbd_zenfs.cc	329;"	d	file:
+NewRandomAccessFile	fs_zenfs.cc	/^IOStatus ZenFS::NewRandomAccessFile(const std::string& fname,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+NewSequentialFile	fs_zenfs.cc	/^IOStatus ZenFS::NewSequentialFile(const std::string& fname,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+NewWritableFile	fs_zenfs.cc	/^IOStatus ZenFS::NewWritableFile(const std::string& fname,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+NewZenFS	fs_zenfs.cc	/^Status NewZenFS(FileSystem** \/*fs*\/, const std::string& \/*bdevname*\/,$/;"	f	namespace:ROCKSDB_NAMESPACE
+NewZenFS	fs_zenfs.cc	/^Status NewZenFS(FileSystem** fs, const std::string& bdevname,$/;"	f	namespace:ROCKSDB_NAMESPACE
+NoZenFSMetrics	metrics.h	/^  NoZenFSMetrics() : ZenFSMetrics() {}$/;"	f	struct:ROCKSDB_NAMESPACE::NoZenFSMetrics
+NoZenFSMetrics	metrics.h	/^struct NoZenFSMetrics : public ZenFSMetrics {$/;"	s	namespace:ROCKSDB_NAMESPACE
+NotifyIOZoneClosed	zbd_zenfs.cc	/^void ZonedBlockDevice::NotifyIOZoneClosed() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+NotifyIOZoneFull	zbd_zenfs.cc	/^void ZonedBlockDevice::NotifyIOZoneFull() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+Open	zbd_zenfs.cc	/^IOStatus ZonedBlockDevice::Open(bool readonly, bool exclusive) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+OpenWR	io_zenfs.cc	/^void ZoneFile::OpenWR() { open_for_wr_ = true; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+Persist	fs_zenfs.h	/^    IOStatus Persist(std::shared_ptr<ZoneFile> zoneFile) {$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFS::MetadataWriter
+PersistRecord	fs_zenfs.cc	/^IOStatus ZenFS::PersistRecord(std::string record) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+PersistSnapshot	fs_zenfs.cc	/^IOStatus ZenFS::PersistSnapshot(ZenMetaLog* meta_writer) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+PositionedAppend	io_zenfs.cc	/^IOStatus ZonedWritableFile::PositionedAppend(const Slice& data, uint64_t offset,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+PositionedRead	io_zenfs.cc	/^IOStatus ZoneFile::PositionedRead(uint64_t offset, size_t n, Slice* result,$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+PositionedRead	io_zenfs.cc	/^IOStatus ZonedSequentialFile::PositionedRead(uint64_t offset, size_t n,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+PushExtent	io_zenfs.cc	/^void ZoneFile::PushExtent() {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+ROCKSDB_NAMESPACE	fs_zenfs.cc	/^namespace ROCKSDB_NAMESPACE {$/;"	n	file:
+ROCKSDB_NAMESPACE	fs_zenfs.h	/^namespace ROCKSDB_NAMESPACE {$/;"	n
+ROCKSDB_NAMESPACE	io_zenfs.cc	/^namespace ROCKSDB_NAMESPACE {$/;"	n	file:
+ROCKSDB_NAMESPACE	io_zenfs.h	/^namespace ROCKSDB_NAMESPACE {$/;"	n
+ROCKSDB_NAMESPACE	metrics.h	/^namespace ROCKSDB_NAMESPACE {$/;"	n
+ROCKSDB_NAMESPACE	metrics_sample.h	/^namespace ROCKSDB_NAMESPACE {$/;"	n
+ROCKSDB_NAMESPACE	snapshot.h	/^namespace ROCKSDB_NAMESPACE {$/;"	n
+ROCKSDB_NAMESPACE	zbd_zenfs.cc	/^namespace ROCKSDB_NAMESPACE {$/;"	n	file:
+ROCKSDB_NAMESPACE	zbd_zenfs.h	/^namespace ROCKSDB_NAMESPACE {$/;"	n
+RangeSync	io_zenfs.cc	/^IOStatus ZonedWritableFile::RangeSync(uint64_t offset, uint64_t nbytes,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+Read	fs_zenfs.cc	/^IOStatus ZenMetaLog::Read(Slice* slice) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenMetaLog
+Read	io_zenfs.cc	/^IOStatus ZonedRandomAccessFile::Read(uint64_t offset, size_t n,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedRandomAccessFile
+Read	io_zenfs.cc	/^IOStatus ZonedSequentialFile::Read(size_t n, const IOOptions& \/*options*\/,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+ReadRecord	fs_zenfs.cc	/^IOStatus ZenMetaLog::ReadRecord(Slice* record, std::string* scratch) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenMetaLog
+ReadyToReport	metrics_sample.h	/^  bool ReadyToReport(uint64_t time) const {$/;"	f	struct:ROCKSDB_NAMESPACE::ReporterSample
+Record	metrics_sample.h	/^  void Record(const TypeTime& time, TypeValue value) {$/;"	f	struct:ROCKSDB_NAMESPACE::ReporterSample
+RecoverFrom	fs_zenfs.cc	/^Status ZenFS::RecoverFrom(ZenMetaLog* log) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+Release	zbd_zenfs.h	/^  bool Release() {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+ReleaseActiveZone	io_zenfs.cc	/^void ZoneFile::ReleaseActiveZone() {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+RemainingCapacity	snapshot.h	/^  uint64_t RemainingCapacity() const { return capacity_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+Rename	io_zenfs.cc	/^void ZoneFile::Rename(std::string name) { filename_ = name; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+RenameFile	fs_zenfs.cc	/^IOStatus ZenFS::RenameFile(const std::string& source_path,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+ReopenWritableFile	fs_zenfs.cc	/^IOStatus ZenFS::ReopenWritableFile(const std::string& fname,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+Report	metrics.h	/^  virtual uint64_t Report(uint64_t time) { return time; }$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+ReportGeneral	metrics.h	/^  virtual void ReportGeneral(Label label, size_t data) {$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+ReportLatency	metrics.h	/^  virtual void ReportLatency(Label label, size_t latency) {$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+ReportQPS	metrics.h	/^  virtual void ReportQPS(Label label, size_t qps) { Report(label, qps, 0); }$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+ReportSuperblock	fs_zenfs.h	/^  void ReportSuperblock(std::string* report) { superblock_->GetReport(report); }$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+ReportThroughput	metrics.h	/^  virtual void ReportThroughput(Label label, size_t throughput) {$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+ReporterSample	metrics_sample.h	/^  ReporterSample(ZenFSMetricsReporterType type) : mu_(), type_(type), hist_() {}$/;"	f	struct:ROCKSDB_NAMESPACE::ReporterSample
+ReporterSample	metrics_sample.h	/^struct ReporterSample {$/;"	s	namespace:ROCKSDB_NAMESPACE
+ReporterType	metrics.h	/^  typedef uint32_t ReporterType;$/;"	t	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+Reset	zbd_zenfs.cc	/^IOStatus Zone::Reset() {$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+ResetUnusedIOZones	zbd_zenfs.cc	/^Status ZonedBlockDevice::ResetUnusedIOZones() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+ReuseWritableFile	fs_zenfs.cc	/^IOStatus ZenFS::ReuseWritableFile(const std::string& fname,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+RollMetaZoneLocked	fs_zenfs.cc	/^IOStatus ZenFS::RollMetaZoneLocked() {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+SetActiveZone	io_zenfs.cc	/^void ZoneFile::SetActiveZone(Zone* zone) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+SetFileModificationTime	io_zenfs.cc	/^void ZoneFile::SetFileModificationTime(time_t mt) { m_time_ = mt; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+SetFileSize	io_zenfs.cc	/^void ZoneFile::SetFileSize(uint64_t sz) { fileSize = sz; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+SetFinishTreshold	zbd_zenfs.h	/^  void SetFinishTreshold(uint32_t threshold) { finish_threshold_ = threshold; }$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+SetWriteLifeTimeHint	io_zenfs.cc	/^IOStatus ZoneFile::SetWriteLifeTimeHint(Env::WriteLifeTimeHint lifetime) {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+SetWriteLifeTimeHint	io_zenfs.cc	/^void ZonedWritableFile::SetWriteLifeTimeHint(Env::WriteLifeTimeHint hint) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+SetZoneDeferredStatus	zbd_zenfs.cc	/^void ZonedBlockDevice::SetZoneDeferredStatus(IOStatus status) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+Skip	io_zenfs.cc	/^IOStatus ZonedSequentialFile::Skip(uint64_t n) {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+Start	snapshot.h	/^  uint64_t Start() const { return start_; }$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneExtentSnapshot
+StartPosition	snapshot.h	/^  uint64_t StartPosition() const { return start_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+Superblock	fs_zenfs.h	/^  Superblock() {}$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+Superblock	fs_zenfs.h	/^  Superblock(ZonedBlockDevice* zbd, std::string aux_fs_path = "",$/;"	f	class:ROCKSDB_NAMESPACE::Superblock
+Superblock	fs_zenfs.h	/^class Superblock {$/;"	c	namespace:ROCKSDB_NAMESPACE
+Sync	io_zenfs.cc	/^IOStatus ZonedWritableFile::Sync(const IOOptions& options,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+SyncFileMetadata	fs_zenfs.cc	/^IOStatus ZenFS::SyncFileMetadata(std::shared_ptr<ZoneFile> zoneFile) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+ToAuxPath	fs_zenfs.h	/^  std::string ToAuxPath(std::string path) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+ToZenFSPath	fs_zenfs.h	/^  std::string ToZenFSPath(std::string aux_path) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+Truncate	io_zenfs.cc	/^IOStatus ZonedWritableFile::Truncate(uint64_t size,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+Type	metrics_sample.h	/^  ZenFSMetricsReporterType Type() const { return type_; }$/;"	f	struct:ROCKSDB_NAMESPACE::ReporterSample
+TypeMicroSec	metrics_sample.h	/^  typedef uint64_t TypeMicroSec;$/;"	t	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+TypeRecord	metrics_sample.h	/^  typedef std::pair<TypeTime, TypeValue> TypeRecord;$/;"	t	struct:ROCKSDB_NAMESPACE::ReporterSample
+TypeReporter	metrics_sample.h	/^  typedef ReporterSample TypeReporter;$/;"	t	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+TypeTime	metrics_sample.h	/^  typedef uint64_t TypeTime;$/;"	t	struct:ROCKSDB_NAMESPACE::ReporterSample
+TypeValue	metrics_sample.h	/^  typedef uint64_t TypeValue;$/;"	t	struct:ROCKSDB_NAMESPACE::ReporterSample
+WafNotifier	zbd_zenfs.cc	/^  WafNotifier() {$/;"	f	class:ROCKSDB_NAMESPACE::WafNotifier
+WafNotifier	zbd_zenfs.cc	/^class WafNotifier {$/;"	c	namespace:ROCKSDB_NAMESPACE	file:
+WriteEndRecord	fs_zenfs.cc	/^IOStatus ZenFS::WriteEndRecord(ZenMetaLog* meta_log) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+WritePosition	snapshot.h	/^  uint64_t WritePosition() const { return wp_; }$/;"	f	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+WriteSnapshotLocked	fs_zenfs.cc	/^IOStatus ZenFS::WriteSnapshotLocked(ZenMetaLog* meta_log) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+ZENFS_META_ZONES	zbd_zenfs.cc	88;"	d	file:
+ZENFS_MIN_ZONES	zbd_zenfs.cc	91;"	d	file:
+ZENFS_VERSION	version.h	2;"	d
+ZENV_URI_PATTERN	fs_zenfs.cc	900;"	d	file:
+ZenFS	fs_zenfs.cc	/^ZenFS::ZenFS(ZonedBlockDevice* zbd, std::shared_ptr<FileSystem> aux_fs,$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+ZenFS	fs_zenfs.h	/^class ZenFS : public FileSystemWrapper {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZenFSHistogramsNameMap	metrics_sample.h	/^    ZenFSHistogramsNameMap = {$/;"	m	namespace:ROCKSDB_NAMESPACE
+ZenFSHistogramsTypeMap	metrics_sample.h	/^    ZenFSHistogramsTypeMap = {$/;"	m	namespace:ROCKSDB_NAMESPACE
+ZenFSMetrics	metrics.h	/^  ZenFSMetrics() {}$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+ZenFSMetrics	metrics.h	/^struct ZenFSMetrics {$/;"	s	namespace:ROCKSDB_NAMESPACE
+ZenFSMetricsLatencyGuard	metrics.h	/^  ZenFSMetricsLatencyGuard(std::shared_ptr<ZenFSMetrics> metrics,$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+ZenFSMetricsLatencyGuard	metrics.h	/^struct ZenFSMetricsLatencyGuard {$/;"	s	namespace:ROCKSDB_NAMESPACE
+ZenFSMetricsSample	metrics_sample.h	/^  ZenFSMetricsSample(Env* env) : env_(env), reporter_map_() {$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+ZenFSMetricsSample	metrics_sample.h	/^struct ZenFSMetricsSample : public ZenFSMetrics {$/;"	s	namespace:ROCKSDB_NAMESPACE
+ZenMetaLog	fs_zenfs.h	/^  ZenMetaLog(ZonedBlockDevice* zbd, Zone* zone) {$/;"	f	class:ROCKSDB_NAMESPACE::ZenMetaLog
+ZenMetaLog	fs_zenfs.h	/^class ZenMetaLog {$/;"	c	namespace:ROCKSDB_NAMESPACE
+Zone	zbd_zenfs.cc	/^Zone::Zone(ZonedBlockDevice *zbd, struct ::spdk_nvme_zns_zone_desc *z)$/;"	f	class:ROCKSDB_NAMESPACE::Zone
+Zone	zbd_zenfs.h	/^class Zone {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZoneExtent	io_zenfs.cc	/^ZoneExtent::ZoneExtent(uint64_t start, uint32_t length, Zone* zone)$/;"	f	class:ROCKSDB_NAMESPACE::ZoneExtent
+ZoneExtent	io_zenfs.h	/^class ZoneExtent {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZoneExtentSnapshot	snapshot.h	/^  ZoneExtentSnapshot(const ZoneExtent& extent)$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneExtentSnapshot
+ZoneExtentSnapshot	snapshot.h	/^struct ZoneExtentSnapshot {$/;"	s	namespace:ROCKSDB_NAMESPACE
+ZoneFile	io_zenfs.cc	/^ZoneFile::ZoneFile(ZonedBlockDevice* zbd, std::string filename,$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+ZoneFile	io_zenfs.h	/^class ZoneFile {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZoneFileSnapshot	snapshot.h	/^  ZoneFileSnapshot(ZoneFile& file)$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneFileSnapshot
+ZoneFileSnapshot	snapshot.h	/^struct ZoneFileSnapshot {$/;"	s	namespace:ROCKSDB_NAMESPACE
+ZoneID	snapshot.h	/^  uint64_t ZoneID() const { return zone_start_; }$/;"	f	struct:ROCKSDB_NAMESPACE::ZoneExtentSnapshot
+ZoneSnapshot	snapshot.h	/^  ZoneSnapshot(const Zone& zone)$/;"	f	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+ZoneSnapshot	snapshot.h	/^class ZoneSnapshot {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZonedBlockDevice	zbd_zenfs.cc	/^ZonedBlockDevice::ZonedBlockDevice(std::string bdevname,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+ZonedBlockDevice	zbd_zenfs.h	/^class ZonedBlockDevice {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZonedRandomAccessFile	io_zenfs.h	/^  explicit ZonedRandomAccessFile(std::shared_ptr<ZoneFile> zoneFile,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedRandomAccessFile
+ZonedRandomAccessFile	io_zenfs.h	/^class ZonedRandomAccessFile : public FSRandomAccessFile {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZonedSequentialFile	io_zenfs.h	/^  explicit ZonedSequentialFile(std::shared_ptr<ZoneFile> zoneFile,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+ZonedSequentialFile	io_zenfs.h	/^class ZonedSequentialFile : public FSSequentialFile {$/;"	c	namespace:ROCKSDB_NAMESPACE
+ZonedWritableFile	io_zenfs.cc	/^ZonedWritableFile::ZonedWritableFile(ZonedBlockDevice* zbd, bool _buffered,$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+ZonedWritableFile	io_zenfs.h	/^class ZonedWritableFile : public FSWritableFile {$/;"	c	namespace:ROCKSDB_NAMESPACE
+active_io_zones_	zbd_zenfs.h	/^  std::atomic<long> active_io_zones_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+active_zone_	io_zenfs.h	/^  Zone* active_zone_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+append_support	zbd_zenfs.h	/^  bool append_support;$/;"	m	struct:zns_info
+aux_fs_path_	fs_zenfs.h	/^  char aux_fs_path_[256] = {0};$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+begin_time_micro_	metrics.h	/^  uint64_t begin_time_micro_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+block_size_	fs_zenfs.h	/^  uint32_t block_size_ = 0; \/* in bytes *\/$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+block_sz	io_zenfs.h	/^  uint32_t block_sz;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+block_sz_	zbd_zenfs.h	/^  uint32_t block_sz_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+bs_	fs_zenfs.h	/^  size_t bs_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenMetaLog
+buffer	io_zenfs.h	/^  char* buffer;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+buffer_mtx_	io_zenfs.h	/^  std::mutex buffer_mtx_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+buffer_pos	io_zenfs.h	/^  uint32_t buffer_pos;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+buffer_sz	io_zenfs.h	/^  size_t buffer_sz;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+buffered	io_zenfs.h	/^  bool buffered;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+busy_	zbd_zenfs.h	/^  std::atomic_bool busy_;$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+capacity_	snapshot.h	/^  uint64_t capacity_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+capacity_	zbd_zenfs.h	/^  uint64_t capacity_; \/* remaining capacity *\/$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+ctrlr	zbd_zenfs.h	/^  struct spdk_nvme_ctrlr *ctrlr;$/;"	m	struct:zns_info	typeref:struct:zns_info::spdk_nvme_ctrlr
+cur_meta_zone_	fs_zenfs.h	/^  Zone* cur_meta_zone_ = nullptr;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+direct_	io_zenfs.h	/^  bool direct_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedRandomAccessFile
+direct_	io_zenfs.h	/^  bool direct_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+env_	metrics.h	/^  Env* env_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+env_	metrics_sample.h	/^  Env* env_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+extent_	snapshot.h	/^  std::vector<ZoneExtentSnapshot> extent_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZoneFileSnapshot
+extent_filepos_	io_zenfs.h	/^  uint64_t extent_filepos_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+extent_start_	io_zenfs.h	/^  uint64_t extent_start_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+extents_	io_zenfs.h	/^  std::vector<ZoneExtent*> extents_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+fileSize	io_zenfs.h	/^  uint64_t fileSize;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+file_id_	io_zenfs.h	/^  uint64_t file_id_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+file_id_	snapshot.h	/^  uint64_t file_id_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZoneFileSnapshot
+filename_	io_zenfs.h	/^  std::string filename_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+filename_	snapshot.h	/^  std::string filename_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZoneFileSnapshot
+filename_	zbd_zenfs.h	/^  std::string filename_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+files_	fs_zenfs.h	/^  std::map<std::string, std::shared_ptr<ZoneFile>> files_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+files_mtx_	fs_zenfs.h	/^  std::mutex files_mtx_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+finish_threshold_	zbd_zenfs.h	/^  uint32_t finish_threshold_ = 0;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+finish_treshold_	fs_zenfs.h	/^  uint32_t finish_treshold_ = 0;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+flags_	fs_zenfs.h	/^  uint32_t flags_ = 0;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+g_objWafNotifier	zbd_zenfs.cc	/^WafNotifier g_objWafNotifier;$/;"	m	namespace:ROCKSDB_NAMESPACE	file:
+hist_	metrics_sample.h	/^  std::vector<TypeRecord> hist_;$/;"	m	struct:ROCKSDB_NAMESPACE::ReporterSample
+info	zbd_zenfs.h	/^  zns_info *info;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+io_zones	zbd_zenfs.h	/^  std::vector<Zone *> io_zones;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+io_zones_mtx	zbd_zenfs.h	/^  std::mutex io_zones_mtx;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+label_	metrics.h	/^  uint32_t label_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+length_	io_zenfs.h	/^  uint32_t length_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneExtent
+length_	snapshot.h	/^  uint64_t length_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZoneExtentSnapshot
+lifetime_	io_zenfs.h	/^  Env::WriteLifeTimeHint lifetime_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+lifetime_	zbd_zenfs.h	/^  Env::WriteLifeTimeHint lifetime_;$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+logger_	fs_zenfs.h	/^  std::shared_ptr<Logger> logger_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+logger_	zbd_zenfs.h	/^  std::shared_ptr<Logger> logger_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+m_time_	io_zenfs.h	/^  time_t m_time_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+magic_	fs_zenfs.h	/^  uint32_t magic_ = 0;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+max_capacity_	snapshot.h	/^  uint64_t max_capacity_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+max_capacity_	zbd_zenfs.h	/^  uint64_t max_capacity_;$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+max_nr_active_io_zones_	zbd_zenfs.h	/^  unsigned int max_nr_active_io_zones_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+max_nr_open_io_zones_	zbd_zenfs.h	/^  unsigned int max_nr_open_io_zones_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+maxqd	zbd_zenfs.h	/^  uint32_t maxqd;$/;"	m	struct:zns_info
+meta_log_	fs_zenfs.h	/^  std::unique_ptr<ZenMetaLog> meta_log_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+meta_zones	zbd_zenfs.h	/^  std::vector<Zone *> meta_zones;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+metadata_sync_mtx_	fs_zenfs.h	/^  std::mutex metadata_sync_mtx_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+metadata_writer_	fs_zenfs.h	/^  MetadataWriter metadata_writer_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+metadata_writer_	io_zenfs.h	/^  MetadataWriter* metadata_writer_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+metrics_	metrics.h	/^  std::shared_ptr<ZenFSMetrics> metrics_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+metrics_	zbd_zenfs.h	/^  std::shared_ptr<ZenFSMetrics> metrics_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+mu_	metrics_sample.h	/^  port::Mutex mu_;$/;"	m	struct:ROCKSDB_NAMESPACE::ReporterSample
+next_file_id_	fs_zenfs.h	/^  std::atomic<uint64_t> next_file_id_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+nr_synced_extents_	io_zenfs.h	/^  uint32_t nr_synced_extents_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+nr_zones_	fs_zenfs.h	/^  uint32_t nr_zones_ = 0;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+nr_zones_	zbd_zenfs.h	/^  uint32_t nr_zones_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+ns	zbd_zenfs.h	/^  struct spdk_nvme_ns    *ns;$/;"	m	struct:zns_info	typeref:struct:zns_info::spdk_nvme_ns
+open_for_wr_	io_zenfs.h	/^  bool open_for_wr_ = false;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+open_io_zones_	zbd_zenfs.h	/^  std::atomic<long> open_io_zones_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+override	fs_zenfs.h	/^                                      IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	fs_zenfs.h	/^                                     IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	fs_zenfs.h	/^                                   IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	fs_zenfs.h	/^                               IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	fs_zenfs.h	/^                              IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	fs_zenfs.h	/^                       uint64_t* size, IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	fs_zenfs.h	/^                      const IOOptions& options, IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	fs_zenfs.h	/^      IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+override	io_zenfs.h	/^                                    IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+override	io_zenfs.h	/^                             IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+override	io_zenfs.h	/^                            IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+override	io_zenfs.h	/^                          IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+override	io_zenfs.h	/^                          IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+override	io_zenfs.h	/^                         IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+override	io_zenfs.h	/^                IODebugContext* dbg) const override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedRandomAccessFile
+override	io_zenfs.h	/^                char* scratch, IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+override	io_zenfs.h	/^  IOStatus Skip(uint64_t n) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+override	io_zenfs.h	/^  size_t GetUniqueId(char* id, size_t max_size) const override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedRandomAccessFile
+override	io_zenfs.h	/^  virtual IOStatus Sync(const IOOptions& options, IODebugContext* dbg) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+override	io_zenfs.h	/^  void SetWriteLifeTimeHint(Env::WriteLifeTimeHint hint) override;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+qpair	zbd_zenfs.h	/^  struct spdk_nvme_qpair *qpair;$/;"	m	struct:zns_info	typeref:struct:zns_info::spdk_nvme_qpair
+rd_completion	fs_zenfs.cc	/^static void rd_completion(void * \/*cb_arg*\/, const struct spdk_nvme_cpl *cpl) {$/;"	f	file:
+rd_completion	io_zenfs.cc	/^static void rd_completion(void * \/*cb_arg*\/, const struct spdk_nvme_cpl *cpl) {$/;"	f	file:
+read_pos_	fs_zenfs.h	/^  uint64_t read_pos_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenMetaLog
+reporter_map_	metrics_sample.h	/^  std::unordered_map<ZenFSMetricsHistograms, TypeReporter> reporter_map_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+reserved_	fs_zenfs.h	/^  char reserved_[123] = {0};$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+rp	io_zenfs.h	/^  uint64_t rp;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+sequence_	fs_zenfs.h	/^  uint32_t sequence_ = 0;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+start_	io_zenfs.h	/^  uint64_t start_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneExtent
+start_	snapshot.h	/^  uint64_t start_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+start_	snapshot.h	/^  uint64_t start_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZoneExtentSnapshot
+start_	zbd_zenfs.h	/^  uint64_t start_;$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+start_time_	zbd_zenfs.h	/^  time_t start_time_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+superblock_	fs_zenfs.h	/^  std::unique_ptr<Superblock> superblock_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+superblock_version_	fs_zenfs.h	/^  uint32_t superblock_version_ = 0;$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+type_	metrics_sample.h	/^  ZenFSMetricsReporterType type_;$/;"	m	struct:ROCKSDB_NAMESPACE::ReporterSample
+used_capacity_	zbd_zenfs.h	/^  std::atomic<long> used_capacity_;$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+uuid_	fs_zenfs.h	/^  char uuid_[37] = {0};$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+valid	zbd_zenfs.h	/^  bool valid;$/;"	m	struct:zns_info
+wp	io_zenfs.h	/^  uint64_t wp;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+wp_	snapshot.h	/^  uint64_t wp_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneSnapshot
+wp_	zbd_zenfs.h	/^  uint64_t wp_;$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+wr_completion	zbd_zenfs.cc	/^static void wr_completion(void * \/*cb_arg*\/, const struct spdk_nvme_cpl *cpl) {$/;"	f	file:
+write_temp	io_zenfs.h	/^  int write_temp;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+zMetaHeaderSize	fs_zenfs.h	/^  const size_t zMetaHeaderSize = sizeof(uint32_t) * 2;$/;"	m	class:ROCKSDB_NAMESPACE::ZenMetaLog
+zbd_	fs_zenfs.h	/^  ZonedBlockDevice* zbd_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenFS
+zbd_	fs_zenfs.h	/^  ZonedBlockDevice* zbd_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenMetaLog
+zbd_	io_zenfs.h	/^  ZonedBlockDevice* zbd_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneFile
+zbd_	zbd_zenfs.h	/^  ZonedBlockDevice *zbd_;$/;"	m	class:ROCKSDB_NAMESPACE::Zone
+zbd_zone_capacity	zbd_zenfs.cc	/^inline uint64_t zbd_zone_capacity(struct spdk_nvme_zns_zone_desc *z) { return z->zcap; }$/;"	f
+zbd_zone_closed	zbd_zenfs.cc	/^inline bool zbd_zone_closed(struct spdk_nvme_zns_zone_desc *z) { return (z->zs == SPDK_NVME_ZONE_STATE_CLOSED); }$/;"	f
+zbd_zone_cond	zbd_zenfs.cc	/^inline uint8_t zbd_zone_cond(struct spdk_nvme_zns_zone_desc *z) { return z->zs; }$/;"	f
+zbd_zone_empty	zbd_zenfs.cc	/^inline bool zbd_zone_empty(struct spdk_nvme_zns_zone_desc *z) { return (z->zs == SPDK_NVME_ZONE_STATE_EMPTY); }$/;"	f
+zbd_zone_exp_open	zbd_zenfs.cc	/^inline bool zbd_zone_exp_open(struct spdk_nvme_zns_zone_desc *z) { return (z->zs == SPDK_NVME_ZONE_STATE_EOPEN); }$/;"	f
+zbd_zone_full	zbd_zenfs.cc	/^inline bool zbd_zone_full(struct spdk_nvme_zns_zone_desc *z) { return (z->zs == SPDK_NVME_ZONE_STATE_FULL); }$/;"	f
+zbd_zone_imp_open	zbd_zenfs.cc	/^inline bool zbd_zone_imp_open(struct spdk_nvme_zns_zone_desc *z) { return (z->zs == SPDK_NVME_ZONE_STATE_IOPEN); }$/;"	f
+zbd_zone_is_active	zbd_zenfs.cc	/^inline bool zbd_zone_is_active(struct spdk_nvme_zns_zone_desc *z) { return (zbd_zone_is_open(z) || zbd_zone_closed(z)); }$/;"	f
+zbd_zone_is_open	zbd_zenfs.cc	/^inline bool zbd_zone_is_open(struct spdk_nvme_zns_zone_desc *z) { return (zbd_zone_imp_open(z) || zbd_zone_exp_open(z)); }$/;"	f
+zbd_zone_offline	zbd_zenfs.cc	/^inline bool zbd_zone_offline(struct spdk_nvme_zns_zone_desc *z) { return (z->zs == SPDK_NVME_ZONE_STATE_OFFLINE); }$/;"	f
+zbd_zone_rdonly	zbd_zenfs.cc	/^inline bool zbd_zone_rdonly(struct spdk_nvme_zns_zone_desc *z) { return (z->zs == SPDK_NVME_ZONE_STATE_RONLY); }$/;"	f
+zbd_zone_start	zbd_zenfs.cc	/^inline uint64_t zbd_zone_start(struct spdk_nvme_zns_zone_desc *z) { return z->zslba; }$/;"	f
+zbd_zone_swr	zbd_zenfs.cc	/^inline bool zbd_zone_swr(struct spdk_nvme_zns_zone_desc *z) { return (z->zt == SPDK_NVME_ZONE_TYPE_SEQWR); }$/;"	f
+zbd_zone_type	zbd_zenfs.cc	/^inline uint8_t zbd_zone_type(struct spdk_nvme_zns_zone_desc *z) { return z->zt; }$/;"	f
+zbd_zone_wp	zbd_zenfs.cc	/^inline uint64_t zbd_zone_wp(struct spdk_nvme_zns_zone_desc *z) { return z->wp; }$/;"	f
+zenFS	fs_zenfs.h	/^    ZenFS* zenFS;$/;"	m	struct:ROCKSDB_NAMESPACE::ZenFS::MetadataWriter
+zenfs_filesystem_reg	fs_zenfs.cc	/^FactoryFunc<FileSystem> zenfs_filesystem_reg =$/;"	m	namespace:ROCKSDB_NAMESPACE	file:
+zns	zbd_zenfs.h	/^  const struct spdk_nvme_zns_ns_data *zns;$/;"	m	struct:zns_info	typeref:struct:zns_info::spdk_nvme_zns_ns_data
+zns_attach	zbd_zenfs.cc	/^static void zns_attach(void *cb_ctx,$/;"	f	namespace:ROCKSDB_NAMESPACE
+zns_completion	zbd_zenfs.cc	/^static void zns_completion(void * \/*cb_arg*\/, const struct spdk_nvme_cpl *cpl) {$/;"	f	file:
+zns_info	zbd_zenfs.h	/^  zns_info() :$/;"	f	struct:zns_info
+zns_info	zbd_zenfs.h	/^struct zns_info {$/;"	s
+zns_probe	zbd_zenfs.cc	/^static bool zns_probe(void * \/*cb_ctx*\/,$/;"	f	namespace:ROCKSDB_NAMESPACE
+zoneFile_	io_zenfs.h	/^  std::shared_ptr<ZoneFile> zoneFile_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedRandomAccessFile
+zoneFile_	io_zenfs.h	/^  std::shared_ptr<ZoneFile> zoneFile_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedSequentialFile
+zoneFile_	io_zenfs.h	/^  std::shared_ptr<ZoneFile> zoneFile_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedWritableFile
+zone_	fs_zenfs.h	/^  Zone* zone_;$/;"	m	class:ROCKSDB_NAMESPACE::ZenMetaLog
+zone_	io_zenfs.h	/^  Zone* zone_;$/;"	m	class:ROCKSDB_NAMESPACE::ZoneExtent
+zone_deferred_status_	zbd_zenfs.h	/^  IOStatus zone_deferred_status_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+zone_deferred_status_mutex_	zbd_zenfs.h	/^  std::mutex zone_deferred_status_mutex_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+zone_fin_cap	zbd_zenfs.cc	/^std::atomic<uint64_t> zone_fin_cap;$/;"	m	namespace:ROCKSDB_NAMESPACE	file:
+zone_fin_cnt	zbd_zenfs.cc	/^std::atomic<uint64_t> zone_fin_cnt;$/;"	m	namespace:ROCKSDB_NAMESPACE	file:
+zone_resources_	zbd_zenfs.h	/^  std::condition_variable zone_resources_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+zone_resources_mtx_	zbd_zenfs.h	/^  std::mutex zone_resources_mtx_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+zone_rst_cap	zbd_zenfs.cc	/^std::atomic<uint64_t> zone_rst_cap;$/;"	m	namespace:ROCKSDB_NAMESPACE	file:
+zone_rst_cnt	zbd_zenfs.cc	/^std::atomic<uint64_t> zone_rst_cnt;$/;"	m	namespace:ROCKSDB_NAMESPACE	file:
+zone_size	zbd_zenfs.cc	/^uint64_t zone_size;$/;"	m	namespace:ROCKSDB_NAMESPACE	file:
+zone_size_	fs_zenfs.h	/^  uint32_t zone_size_ = 0;  \/* in blocks *\/$/;"	m	class:ROCKSDB_NAMESPACE::Superblock
+zone_start_	snapshot.h	/^  uint64_t zone_start_;$/;"	m	struct:ROCKSDB_NAMESPACE::ZoneExtentSnapshot
+zone_sz_	zbd_zenfs.h	/^  uint64_t zone_sz_;$/;"	m	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+~MetadataWriter	io_zenfs.cc	/^ZonedWritableFile::MetadataWriter::~MetadataWriter() {}$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile::MetadataWriter
+~NoZenFSMetrics	metrics.h	/^  virtual ~NoZenFSMetrics() {}$/;"	f	struct:ROCKSDB_NAMESPACE::NoZenFSMetrics
+~WafNotifier	zbd_zenfs.cc	/^  ~WafNotifier() {$/;"	f	class:ROCKSDB_NAMESPACE::WafNotifier
+~ZenFS	fs_zenfs.cc	/^ZenFS::~ZenFS() {$/;"	f	class:ROCKSDB_NAMESPACE::ZenFS
+~ZenFSMetrics	metrics.h	/^  virtual ~ZenFSMetrics() {}$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetrics
+~ZenFSMetricsLatencyGuard	metrics.h	/^  virtual ~ZenFSMetricsLatencyGuard() {$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsLatencyGuard
+~ZenFSMetricsSample	metrics_sample.h	/^  ~ZenFSMetricsSample() {}$/;"	f	struct:ROCKSDB_NAMESPACE::ZenFSMetricsSample
+~ZenMetaLog	fs_zenfs.h	/^  virtual ~ZenMetaLog() {$/;"	f	class:ROCKSDB_NAMESPACE::ZenMetaLog
+~ZoneFile	io_zenfs.cc	/^ZoneFile::~ZoneFile() {$/;"	f	class:ROCKSDB_NAMESPACE::ZoneFile
+~ZonedBlockDevice	zbd_zenfs.cc	/^ZonedBlockDevice::~ZonedBlockDevice() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedBlockDevice
+~ZonedWritableFile	io_zenfs.cc	/^ZonedWritableFile::~ZonedWritableFile() {$/;"	f	class:ROCKSDB_NAMESPACE::ZonedWritableFile
