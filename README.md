@@ -52,7 +52,7 @@ $ cd ..
 ```
 
 4. Specify the model name of ZNS SSD
-5. 
+
 WALTZ needs to specify the model code of the ZNS SSD device in the first line of format\_mkfs.sh to configure the PCIe BDF address (e.g., 01:00.0).
 
 WALTZ uses lspci and grep to extract the PCIe address and pick the first one if there are several devices with same model code.
