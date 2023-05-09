@@ -6,10 +6,12 @@
 
 #----------------------------------------------
 
+# [JS] for SPDK support
 DISABLE_WARNING_AS_ERROR=1
 EXTRA_CXXFLAGS += -w
+EXTRA_CXXFLAGS += -I./plugin/spdk/build/include
+EXTRA_CXXFLAGS += -I./plugin/spdk/dpdk/build/include
 
-# [JS] for SPDK support
 SPDK_LIBRARIES += -lspdk
 SPDK_LIBRARIES += -lspdk_env_dpdk
 SPDK_LIBRARIES += -lrte_ring
@@ -20,15 +22,13 @@ SPDK_LIBRARIES += -lrte_pci
 SPDK_LIBRARIES += -lrte_kvargs
 SPDK_LIBRARIES += -lrte_vhost
 SPDK_LIBRARIES += -lrte_power
+SPDK_LIBRARIES += -lrte_telemetry
 
 EXTRA_LDFLAGS += -Wl,--whole-archive
-EXTRA_LDFLAGS += -lisal
+EXTRA_LDFLAGS += -L./plugin/spdk/build/lib
+EXTRA_LDFLAGS += -L./plugin/spdk/dpdk/build/lib
 EXTRA_LDFLAGS += $(SPDK_LIBRARIES)
 EXTRA_LDFLAGS += -Wl,--no-whole-archive
-
-#COMPILE_WITH_ASAN=1
-#COMPILE_WITH_UBSAN=1
-
 
 BASH_EXISTS := $(shell which bash)
 SHELL := $(shell which bash)

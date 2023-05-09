@@ -1,8 +1,10 @@
-if [ -d /usr/local/share/spdk ]
+ZNS_SSD_MODELNAME=a825
+
+if [ -d ./plugin/spdk ]
 then
-  SPDK_DIR=/usr/local/share/spdk/scripts
+  SPDK_DIR=./plugin/spdk/scripts
 else
-  echo "please install SPDK v22.01.2 at /usr/local/share/spdk"
+  echo "please install SPDK v22.01.2"
   exit 1
 fi
 
@@ -13,7 +15,7 @@ $SPDK_DIR/setup.sh reset > /dev/null 2> /dev/null
 sleep 3
 
 # Figure out nvmeXnY from pcie address
-PCIE_ADDR=`lspci | grep a825 | head -n1 | awk '{print $1}'`
+PCIE_ADDR=`lspci | grep $ZNS_SSD_MODELNAME | head -n1 | awk '{print $1}'`
 ZENFS_DEV=`ls -al /sys/block/nvme* | grep $PCIE_ADDR | awk -F/ '{print $NF}'`
 
 echo "PCIeAddress: $PCIE_ADDR" > identify_zns

@@ -22,14 +22,18 @@ fi
 #BENCHMARKS=prefill,levelstats,resetstats,latencybreakdown,$TEST,levelstats,stats
 BENCHMARKS=prefill,levelstats,resetstats,$TEST,levelstats,stats
 
-OUTFILE=stdout_test${TESTMODE}_test${TESTTYPE}.log
-ERRFILE=stderr_test${TESTMODE}_test${TESTTYPE}.log
-
 # testmode 0 - WALTZ mode, need 'enablewaltzmode' benchmark at the beginning
 # testmode 1 - baseline
 if [ $TESTMODE -eq 0 ]
 then
 BENCHMARKS=enablewaltzmode,$BENCHMARKS
+
+OUTFILE=stdout_waltz_test${TESTTYPE}.log
+ERRFILE=stderr_waltz_test${TESTTYPE}.log
+else
+
+OUTFILE=stdout_zenfs_test${TESTTYPE}.log
+ERRFILE=stderr_zenfs_test${TESTTYPE}.log
 fi
 
 THREADS=4

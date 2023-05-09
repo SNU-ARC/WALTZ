@@ -77,11 +77,6 @@ function print_duration() {
     SECS=$((SECS%60))
     echo "$HRS"h "$MINS"m "$SECS" s
 }
-
-CGROUP='cgexec -g memory:my_group'
-CGROUP_LIMIT_IN_MB=$((64*1024))
-CGROUP_LIMIT=$((CGROUP_LIMIT_IN_MB*1024*1024))
-
 function drop_cache(){
     echo "Drop cache & storage clear"
     sync
@@ -96,17 +91,6 @@ function format_zns(){
 }
 
 swapoff -a
-
-CGROUP_LOC=/sys/fs/cgroup/memory/my_group
-ls $CGROUP_LOC > /dev/null 2> /dev/null
-
-if [ $? -ne 0 ]
-then
-  echo "Cgroup not exist. create one"
-  mkdir $CGROUP_LOC
-fi
-
-echo $CGROUP_LIMIT > $CGROUP_LOC/memory.limit_in_bytes
 
 for CUR_TEST in $TESTS
 do
@@ -123,10 +107,10 @@ then
   drop_cache
   echo "WALTZ test$CUR_TEST start at "`date`
   SECONDS=0
-  $CGROUP $RUN_SCRIPT 0 $CUR_TEST $VALUE_SIZE $KEYRANGE $KEYTEST
+  $RUN_SCRIPT 0 $CUR_TEST $VALUE_SIZE $KEYRANGE $KEYTEST
   echo "Run test$CUR_TEST for tc0(WALTZ) $(print_duration $SECONDS)" | tee -a time.log
-  cat stdout_test0_test${CUR_TEST}.log | grep microbench
-  cat stdout_test0_test${CUR_TEST}.log | grep mixgraph
+  cat stdout_waltz_test${CUR_TEST}.log | grep microbench
+  cat stdout_waltz_test${CUR_TEST}.log | grep mixgraph
 fi
 
 if [ $TEST_ZENFS -eq 1 ]
@@ -137,12 +121,12 @@ then
   echo "Format ZNS for tc1(ZenFS) $(print_duration $SECONDS)" | tee -a time.log
 
   drop_cache
-  echo "WALTZ test$CUR_TEST start at "`date`
+  echo "ZenFS test$CUR_TEST start at "`date`
   SECONDS=0
-  $CGROUP $RUN_SCRIPT 1 $CUR_TEST $VALUE_SIZE $KEYRANGE $KEYTEST
+  $RUN_SCRIPT 1 $CUR_TEST $VALUE_SIZE $KEYRANGE $KEYTEST
   echo "Run test$CUR_TEST for tc1(ZenFS) $(print_duration $SECONDS)" | tee -a time.log
-  cat stdout_test1_test${CUR_TEST}.log | grep microbench
-  cat stdout_test1_test${CUR_TEST}.log | grep mixgraph
+  cat stdout_zenfs_test${CUR_TEST}.log | grep microbench
+  cat stdout_zenfs_test${CUR_TEST}.log | grep mixgraph
 fi
 
 done
